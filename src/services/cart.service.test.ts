@@ -2,6 +2,7 @@ import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 import { CartService } from './cart.service';
 
+// PRO: Multiple tests to cover different scenarios.
 describe('cart', () => {
 	it('should calculate the total price correctly - no discount (only KETO)', async () => {
 		const data = {
