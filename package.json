@@ -4,7 +4,8 @@
   "description": "Superfiliate - API to calculate cereal offer",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/index.ts",
+    "test": "tsx watch --test src/services/*test.ts"
   },
   "author": "Morgana Bagatini",
   "license": "ISC",
