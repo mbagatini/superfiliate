@@ -3,7 +3,7 @@ import { CalculatePriceSchema, cartSchema } from "../schemas/cart.schema";
 export class CartService {
 	// PRO: Usage of typescript schema to validate the input data
 	// CON: This function doesn't need to be async since it's not doing any asynchronous operations
-	async calculatePrice(param: CalculatePriceSchema) {
+	calculatePrice(param: CalculatePriceSchema) {
 		const data = cartSchema.parse(param);
 
 		// Discount offer

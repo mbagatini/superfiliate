@@ -10,7 +10,7 @@ export async function calculateCartPriceController(req: Request, res: Response) 
 		const data = req.body;
 
 		// CON: Using await here is not necessary since the function is not actually async.
-		const cart = await cartService.calculatePrice(data);
+		const cart = cartService.calculatePrice(data);
 
 		return res.status(201).json(cart);
 	} catch (error) {
